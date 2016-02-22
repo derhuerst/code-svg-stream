@@ -9,5 +9,18 @@
 	"homepage":          "https://github.com/derhuerst/hieroglyph",
 	"repository":        "git://github.com/derhuerst/hieroglyph.git",
 	"license":           "ISC",
-	"engines":           {"node": ">=5"}
+	"engines":           {"node": ">=5"},
+	"devDependencies": {
+		"coffee-script": "^1.10",
+		"nodeunit":      "^0.9.1",
+		"cheerio":       "^0.20",
+		"is-stream":     "^1.0.1",
+		"stream-sink":   "^1.2",
+		"watchy":        "^0.6.6"
+	},
+	"scripts": {
+		"test":          "nodeunit --reporter minimal test.coffee",
+		"test:watch":    "watchy -s -w . nodeunit --reporter minimal test.coffee",
+		"prepublish":    "npm test"
+	}
 }
