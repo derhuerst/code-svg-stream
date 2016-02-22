@@ -10,6 +10,12 @@
 	"repository":        "git://github.com/derhuerst/code-svg-stream.git",
 	"license":           "ISC",
 	"engines":           {"node": ">=5"},
+	"dependencies": {
+		"stream-connect":     "^1.0.2",
+		"line-length-stream": "^0.1",
+		"through2":           "^2.0.1",
+		"wrap-stream":        "^2"
+	},
 	"devDependencies": {
 		"coffee-script": "^1.10",
 		"nodeunit":      "^0.9.1",
