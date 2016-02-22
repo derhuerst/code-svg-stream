@@ -12,7 +12,7 @@ const tail = '</svg>\n'
 
 const rect = (x, y, w) => `<rect x="${x}" y="${y}" width="${w}" height="5" />\n`
 
-const hieroglyph = function (options) {
+const codeSVGStream = function (options) {
 	options = options || {}
 	let lineNr = -1
 
@@ -29,5 +29,5 @@ const hieroglyph = function (options) {
 
 
 
-Object.assign(hieroglyph, {head: head, tail: tail, rect: rect})
-module.exports = hieroglyph
+Object.assign(codeSVGStream, {head: head, tail: tail, rect: rect})
+module.exports = codeSVGStream

@@ -1,13 +1,13 @@
 {
-	"name":              "hieroglyph",
+	"name":              "code-svg-stream",
 	"description":       "Transform stream that visualizes code using SVG.",
 	"version":           "0.1.0",
 	"main":              "index.js",
 	"files":             ["index.js"],
 	"keywords":          ["visualize", "code", "line length", "svg", "streams2"],
 	"author":            "Jannis R <mail@jannisr.de>",
-	"homepage":          "https://github.com/derhuerst/hieroglyph",
-	"repository":        "git://github.com/derhuerst/hieroglyph.git",
+	"homepage":          "https://github.com/derhuerst/code-svg-stream",
+	"repository":        "git://github.com/derhuerst/code-svg-stream.git",
 	"license":           "ISC",
 	"engines":           {"node": ">=5"},
 	"devDependencies": {

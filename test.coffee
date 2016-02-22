@@ -1,9 +1,9 @@
-cheerio =    require 'cheerio'
-isStream =   require 'is-stream'
-sink =       require 'stream-sink'
+cheerio =       require 'cheerio'
+isStream =      require 'is-stream'
+sink =          require 'stream-sink'
 
-hieroglyph = require './index.js'
-{rect} =     hieroglyph
+codeSVGStream = require './index.js'
+{rect} =        codeSVGStream
 
 
 
@@ -22,14 +22,14 @@ module.exports =
 			test.strictEqual el.attr('width'), '67'
 			test.done()
 
-	hieroglyph:
+	codeSVGStream:
 
 		'returns a duplex steam': (test) ->
-			test.ok isStream.duplex hieroglyph()
+			test.ok isStream.duplex codeSVGStream()
 			test.done()
 
 		'test with empty line': (test) ->
-			h = hieroglyph()
+			h = codeSVGStream()
 			s = h.pipe sink()
 
 			s.on 'data', (d) ->
@@ -46,7 +46,7 @@ module.exports =
 			h.end 'foo\n\n  bar baz'
 
 		'test with different indentations': (test) ->
-			h = hieroglyph tabSize: 4
+			h = codeSVGStream tabSize: 4
 			s = h.pipe sink()
 
 			s.on 'data', (d) ->
