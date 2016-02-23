@@ -34,7 +34,7 @@ module.exports =
 
 			s.on 'data', (d) ->
 				# todo: use lodash.isMatch
-				els = cheerio.load(d.toString())('svg rect').toArray()
+				els = cheerio.load(d.toString())('rect').toArray()
 				test.strictEqual els.length,           2
 				test.strictEqual els[0].attribs.x,     '0'
 				test.strictEqual els[0].attribs.y,     '0'
@@ -51,7 +51,7 @@ module.exports =
 
 			s.on 'data', (d) ->
 				# todo: use lodash.isMatch
-				els = cheerio.load(d.toString())('svg rect').toArray()
+				els = cheerio.load(d.toString())('rect').toArray()
 				test.strictEqual els.length,           2
 				test.strictEqual els[0].attribs.x,     '2'
 				test.strictEqual els[0].attribs.y,     '0'
