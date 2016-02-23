@@ -4,6 +4,7 @@
 	"version":           "0.1.0",
 	"main":              "index.js",
 	"files":             ["index.js"],
+	"bin":               {"code-svg-stream": "./bin.js"},
 	"keywords":          ["visualize", "code", "line length", "svg", "streams2"],
 	"author":            "Jannis R <mail@jannisr.de>",
 	"homepage":          "https://github.com/derhuerst/code-svg-stream",
