@@ -7,7 +7,7 @@ const through =    require('through2')
 
 
 const rect = (x, y, w) => `
-<rect class="code" x="${x}" y="${y}" width="${w}" height="5" />`
+<rect class="code" x="${x}" y="${y}" width="${w === 1 ? 2 : w}" height="5" />`
 
 const codeSVGStream = function (options) {
 	options = options || {}

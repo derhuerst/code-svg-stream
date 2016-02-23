@@ -15,11 +15,16 @@ module.exports =
 
 	rect:
 
-		'return a correct SVG `rect`': (test) ->
+		'returns a correct SVG `rect`': (test) ->
 			el = cheerio.load(rect 4, 240, 67) 'rect'
 			test.strictEqual el.attr('x'),     '4'
 			test.strictEqual el.attr('y'),     '240'
 			test.strictEqual el.attr('width'), '67'
+			test.done()
+
+		'prevents too small `rect`s': (test) ->
+			el = cheerio.load(rect 0, 0, 1) 'rect'
+			test.strictEqual el.attr('width'), '2' # instead of 1
 			test.done()
 
 	codeSVGStream:
