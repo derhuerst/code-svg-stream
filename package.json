@@ -1,10 +1,10 @@
 {
 	"name":              "code-svg-stream",
 	"description":       "Transform stream that visualizes code using SVG.",
-	"version":           "0.2.1",
+	"version":           "0.2.2",
 	"main":              "index.js",
-	"files":             ["index.js", "./bin.js"],
-	"bin":               {"code-svg-stream": "./bin.js"},
+	"files":             ["index.js", "bin.js"],
+	"bin":               "bin.js",
 	"keywords":          ["visualize", "code", "line length", "svg", "streams2"],
 	"author":            "Jannis R <mail@jannisr.de>",
 	"homepage":          "https://github.com/derhuerst/code-svg-stream",
