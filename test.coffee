@@ -37,7 +37,7 @@ module.exports =
 			h = codeSVGStream()
 			s = h.pipe sink()
 
-			s.on 'data', (d) ->
+			s.then (d) ->
 				# todo: use lodash.isMatch
 				els = cheerio.load(d.toString())('rect').toArray()
 				test.strictEqual els.length,           2
@@ -54,7 +54,7 @@ module.exports =
 			h = codeSVGStream tabSize: 4
 			s = h.pipe sink()
 
-			s.on 'data', (d) ->
+			s.then (d) ->
 				# todo: use lodash.isMatch
 				els = cheerio.load(d.toString())('rect').toArray()
 				test.strictEqual els.length,           2

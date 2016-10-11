@@ -19,10 +19,10 @@
 	},
 	"devDependencies": {
 		"coffee-script": "^1.10",
-		"nodeunit":      "^0.9.1",
-		"cheerio":       "^0.20",
+		"nodeunit":      "^0.10.2",
+		"cheerio":       "^0.22",
 		"is-stream":     "^1.0.1",
-		"stream-sink":   "^1.2",
+		"stream-sink":   "^2",
 		"watchy":        "^0.6.6"
 	},
 	"scripts": {
