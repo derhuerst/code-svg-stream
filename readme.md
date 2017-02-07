@@ -10,6 +10,7 @@ cat my-code-file | code-svg-stream > my-code-file.svg
 [![dependency status](https://img.shields.io/david/derhuerst/code-svg-stream.svg)](https://david-dm.org/derhuerst/code-svg-stream#info=dependencies)
 [![dev dependency status](https://img.shields.io/david/dev/derhuerst/code-svg-stream.svg)](https://david-dm.org/derhuerst/code-svg-stream#info=devDependencies)
 ![ISC-licensed](https://img.shields.io/github/license/derhuerst/code-svg-stream.svg)
+[![chat on gitter](https://badges.gitter.im/derhuerst.svg)](https://gitter.im/derhuerst)
 
 
 ## Installing

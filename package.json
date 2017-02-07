@@ -10,7 +10,7 @@
 	"homepage":          "https://github.com/derhuerst/code-svg-stream",
 	"repository":        "git://github.com/derhuerst/code-svg-stream.git",
 	"license":           "ISC",
-	"engines":           {"node": ">=5"},
+	"engines":           {"node": ">=6"},
 	"dependencies": {
 		"stream-connect":     "^1.0.2",
 		"line-length-stream": "^0.1",
@@ -18,16 +18,14 @@
 		"wrap-stream":        "^2"
 	},
 	"devDependencies": {
-		"coffee-script": "^1.10",
-		"nodeunit":      "^0.10.2",
+		"tape": "^4.6.3",
 		"cheerio":       "^0.22",
 		"is-stream":     "^1.0.1",
 		"stream-sink":   "^2",
-		"watchy":        "^0.6.6"
+		"tap-min": "^1.2.0"
 	},
 	"scripts": {
-		"test":          "nodeunit --reporter minimal test.coffee",
-		"test:watch":    "watchy -s -w . nodeunit --reporter minimal test.coffee",
+		"test": "node test.js | tap-min",
 		"prepublish":    "npm test"
 	}
 }
