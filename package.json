@@ -14,7 +14,7 @@
 	"dependencies": {
 		"stream-connect":     "^1.0.2",
 		"line-length-stream": "^0.1",
-		"through2":           "^2.0.1",
+		"through2":           "^3.0.0",
 		"wrap-stream":        "^2"
 	},
 	"devDependencies": {
