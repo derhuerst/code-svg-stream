@@ -20,7 +20,7 @@
 	"devDependencies": {
 		"tape": "^5.0.0",
 		"cheerio":       "^1.0.0-rc.1",
-		"is-stream":     "^1.0.1",
+		"is-stream":     "^2.0.0",
 		"stream-sink":   "^2",
 		"tap-min": "^1.2.0"
 	},
