@@ -1,31 +1,45 @@
 {
-	"name":              "code-svg-stream",
-	"description":       "Transform stream that visualizes code using SVG.",
-	"version":           "0.2.2",
-	"main":              "index.js",
-	"files":             ["index.js", "bin.js"],
-	"bin":               "bin.js",
-	"keywords":          ["visualize", "code", "line length", "svg", "streams2"],
-	"author":            "Jannis R <mail@jannisr.de>",
-	"homepage":          "https://github.com/derhuerst/code-svg-stream",
-	"repository":        "git://github.com/derhuerst/code-svg-stream.git",
-	"license":           "ISC",
-	"engines":           {"node": ">=6"},
-	"dependencies": {
-		"stream-connect":     "^1.0.2",
-		"line-length-stream": "^0.1",
-		"through2":           "^3.0.0",
-		"wrap-stream":        "^2"
-	},
-	"devDependencies": {
-		"tape": "^5.0.0",
-		"cheerio":       "^1.0.0-rc.1",
-		"is-stream":     "^1.0.1",
-		"stream-sink":   "^2",
-		"tap-min": "^1.2.0"
-	},
-	"scripts": {
-		"test": "node test.js | tap-min",
-		"prepublish":    "npm test"
-	}
+  "name": "code-svg-stream",
+  "description": "Transform stream that visualizes code using SVG.",
+  "version": "0.2.2",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "bin.js"
+  ],
+  "bin": "bin.js",
+  "keywords": [
+    "visualize",
+    "code",
+    "line length",
+    "svg",
+    "streams2"
+  ],
+  "author": "Jannis R <mail@jannisr.de>",
+  "homepage": "https://github.com/derhuerst/code-svg-stream",
+  "repository": "git://github.com/derhuerst/code-svg-stream.git",
+  "license": "ISC",
+  "engines": {
+    "node": ">=6"
+  },
+  "dependencies": {
+    "stream-connect": "^1.0.2",
+    "line-length-stream": "^0.1",
+    "through2": "^3.0.0",
+    "wrap-stream": "^2",
+    "snyk": "^1.320.2"
+  },
+  "devDependencies": {
+    "tape": "^5.0.0",
+    "cheerio": "^1.0.0-rc.1",
+    "is-stream": "^1.0.1",
+    "stream-sink": "^2",
+    "tap-min": "^1.2.0"
+  },
+  "scripts": {
+    "test": "node test.js | tap-min",
+    "prepublish": "npm run snyk-protect && npm test",
+    "snyk-protect": "snyk protect"
+  },
+  "snyk": true
 }
